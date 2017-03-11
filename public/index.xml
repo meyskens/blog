@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maartje Eyskens</title>
+    <link>https://eyskens.me/index.xml</link>
+    <description>Recent content on Maartje Eyskens</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Mar 2017 15:22:37 +0100</lastBuildDate>
+    <atom:link href="https://eyskens.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello Hugo</title>
+      <link>https://eyskens.me/article/hello-hugo/</link>
+      <pubDate>Thu, 09 Mar 2017 15:22:37 +0100</pubDate>
+      
+      <guid>https://eyskens.me/article/hello-hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Floating containers on an ARM mini cloud</title>
+      <link>https://eyskens.me/article/floating-containers-on-an-arm-mini-cloud/</link>
+      <pubDate>Tue, 15 Sep 2015 22:40:00 +0100</pubDate>
+      
+      <guid>https://eyskens.me/article/floating-containers-on-an-arm-mini-cloud/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://scaleway.com&#34;&gt;Scaleway&lt;/a&gt; is a great idea. Using self-designed ARM hardware to host small applications on and being able to offer it at a price your Amazon instance can barely boot for. In fact I moved my blog to there and be able  to run it on my dedicated supercharged Raspberry Pi like server and still have enough power left to play Angry Birds (if only that was possible).
+Their vision is to horizontal scale your apps over several small machines. Something that was also our vision at &lt;a href=&#34;https://shoutca.st/cast&#34;&gt;SHOUTca.st&lt;/a&gt; when designing the backend for Cast. Small machines with dedicated connectivity and over redundancy. All this was powered by the new great Linux distro &lt;a href=&#34;https://coreos.com&#34;&gt;CoreOS&lt;/a&gt;. But their ARM version wasn&amp;rsquo;t ready and if it was it could not be used on the Scaleway C1.&lt;/p&gt;
+
+&lt;p&gt;So starting over was the best to do. Using Ubuntu as core gave me an OS I knew and that was used by CoreOS to test their components on. The result is now available on the &lt;a href=&#34;https://github.com/scaleway-community/scaleway-ubuntu-coreos&#34;&gt;Scaleway community repo&lt;/a&gt;.
+To begin with their build system is quite nice thanks to the Dockerfile standard I was able to build the first image in a matter of minutes. After adding the core components as Etcd, Fleet and Flannel the first image was ready (after one weekend ironing bugs out.
+Inserting cloud-init files was not possible due the Scaleway API not supporting it so instead I inspired me on the Docker image which uses tags to insert some data. With a discover tag included I was able to inject the discover URL into the systemd units on first boot.&lt;/p&gt;
+
+&lt;p&gt;Only one issue was left. In the past we used OpenStack Neutron to filter traffic coming from outside the CoreOS security group. Unfortunately the ScaleWay firewall is not as advanced. That is why a small Go (to not add any extra overhead, Go was already in use for the CoreOS components) script is included that fetches a list of servers via the API and whitelist those in the UFW firewall.&lt;/p&gt;
+
+&lt;p&gt;At the time of writing we have 6 of these running :) 6*3 = €18 per month. Again, how much did you pay for that AWS t2.small??&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

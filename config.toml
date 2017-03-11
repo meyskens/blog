@@ -1,0 +1,55 @@
+languageCode = "en-us"
+title = "Maartje Eyskens"
+baseURL = "https://eyskens.me/"
+MetaDataFormat = "toml"
+theme = "slender"
+paginate = 8
+PaginatePath = "/"
+
+[author]
+    name = "Maartje Eyskens"
+
+[permalinks]
+
+    # Permalink format for pages.
+    page = "/:title/"
+
+    # Permalink format for blog posts.
+    post = "/:title/"
+
+[params]
+
+    # Change the color scheme of Slender.
+    # See above for preview and list of color schemes.
+    colorscheme = "purple"
+
+    # Tagline; HTML accepted here. Keep it concise.
+    tagline = "A woman who Go, JS, Linux, Docker, IoT, Security... "
+
+    # Footer; Markdown accepted here.
+    footer = "CC-BY Maartje Eyskens"
+
+    # Description and keywords for <meta> tags.
+    # Remember to set this for your main page.
+    # This will be overridden by whatever is set by the page or post,
+    # defined by `description` and `keywords` variables in the front matter
+    # of the markdown file.
+    description = ""
+    keywords = ""
+
+    # Social links, must be full URLs (e.g. https://github.com/CrimsonRay/).
+    # Remove, comment, or leave blank any field to leave them out.
+    email = "mailto:maartje@eyskens.me"
+    github = "https://github.com/meyskens"
+    twitter = "https://twitter.com/maartjeme"
+
+[menu]
+
+    # Menu for the nav bar.
+    # There must always be one item present (e.g. home).
+    [[menu.main]]
+    identifier = "home"
+    name       = "Home"
+    url        = "/"
+    weight     = 0
+

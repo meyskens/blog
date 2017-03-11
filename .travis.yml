@@ -1,0 +1,21 @@
+language: go
+go:
+  - 1.8
+addons:
+  ssh_known_hosts: eyskens.me
+  apt:
+    packages:
+        - sshpass
+        - wget 
+sudo: required
+
+install:
+  - export SSHPASS=$DEPLOY_PASS
+  - wget https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19-64bit.deb
+  - sudo dpkg -i hugo_0.19-64bit.deb
+
+script:
+  - hugo
+
+after_success:
+- sshpass -e rsync -avz --delete public/ blog@eyskens.me:/var/www/blog/
