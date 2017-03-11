@@ -1,0 +1,8 @@
+{{ partial "header.html" . }}
+<article class="article-content">
+    {{ if eq .Section "post" }}
+        <h1>{{ .Title }}</h1>
+    {{ end }}
+    {{ .Content }}
+</article>
+{{ partial "footer.html" . }}
