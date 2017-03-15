@@ -12,7 +12,6 @@
         <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
         <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
         {{ .Hugo.Generator }}
-        <link rel="icon" href="{{ "assets/favicon.ico" | absURL }}" type="image/x-icon">
         <link rel="stylesheet" href="{{ "css/slender-base.css" | absURL }}">
         <link rel="stylesheet" href="{{ "css/slender-color-schemes.css" | absURL }}">
         <link rel="stylesheet" href="{{ "css/font-awesome-4.5.0.min.css" | absURL }}">
