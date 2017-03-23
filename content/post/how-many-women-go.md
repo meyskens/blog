@@ -40,7 +40,7 @@ So after waiting for access to their MongoDB server to import the names into the
 ![Importing the names from MongoDB](/images/genderstats/name-link.png) 
 Now it was time for a run of the query! To speed it up I made Goroutines to iterate over a part of the database and max out the database server's CPU.
 ![My MacBook acompanied by nail polish bottles](/images/genderstats/dataandnails.jpg) 
-*Doing my nails and data analysis, inspired by [Simply Nalogical](https://twitter.com/nailogical)*
+*Doing my nails and data analysis, inspired by [Simply Nailogical](https://twitter.com/nailogical)*
 
 After several runs with finetuning I still got higher numbers than the BiqQuery research Sarah Adams has done in the meantime (for Go only). This makes me suspect there is something wrong in the code. So I went through tweaking and code-reviewing again. So I hope I finally have some representable numbers.
 
