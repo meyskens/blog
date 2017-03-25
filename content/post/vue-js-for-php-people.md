@@ -3,6 +3,7 @@ date = "2017-03-25T21:05:28+01:00"
 title = "Vue.js for PHP people"
 keywords = []
 description = ""
+header = "/images/vuejs/northpole.jpg"
 
 +++
 
