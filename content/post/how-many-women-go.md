@@ -15,7 +15,7 @@ After the results of the [Go survey](https://blog.golang.org/survey2016-results)
 [Sarah Adams' gender guestimate program](https://github.com/adams-sarah/go-gender-stats) already did a nice part for the Go community by analysing the Gophers Slack and the Go contributors based on first names. Building on this tool I've added a tiny part using [Google's BigQuery](https://bigquery.cloud.google.com) to fetch all names from commits and their language from GitHub inspired by [Alyssa Frazee's work](http://alyssafrazee.com/gender-and-github-code.html).
 
 ## Some numbers
-According to the Go blog 1% (lowest we've seen) identifies as woman, while we see a 6.95% in the Gophers Slack. [Thomas More reports](https://twitter.com/inge_tyskens/status/839357543868682240) 7% for their bachlor in Applied Computer Science, 1,3% and 0,6% for Electronics-ICT in 2 campuses. Stackoverflow [reports](https://stackoverflow.com/insights/survey/2017#demographics) 7,6%. While [Apple reports](https://www.apple.com/diversity/) an optimistic(?) 23%!
+According to the Go blog 1% (lowest we've seen) identifies as woman, while we see a 6.95% in the Gophers Slack. [Thomas More reports](https://twitter.com/inge_tyskens/status/839357543868682240) 7% for their bachelor in Applied Computer Science, 1,3% and 0,6% for Electronics-ICT in 2 campuses. Stackoverflow [reports](https://stackoverflow.com/insights/survey/2017#demographics) 7,6%. While [Apple reports](https://www.apple.com/diversity/) an optimistic(?) 23%!
 
 ## Failure 1
 So let's keep it simple, let's JOIN all the data we need in one SQL query and fetch in all data to process te names. Sound right, doesn't it? It all worked till I hit the 6 hour timeout of the query... Maybe chunking the data is needed.
@@ -39,15 +39,15 @@ Same error, I gave up on BiqQuery and went to import [GHTorrent](http://ghtorren
 So after waiting for access to their MongoDB server to import the names into the MySQL server, I wrote a small Go script to go over the database and look up the names.
 ![Importing the names from MongoDB](/images/genderstats/name-link.png) 
 Now it was time for a run of the query! To speed it up I made Goroutines to iterate over a part of the database and max out the database server's CPU.
-![My MacBook acompanied by nail polish bottles](/images/genderstats/dataandnails.jpg) 
+![My MacBook accompanied by nail polish bottles](/images/genderstats/dataandnails.jpg) 
 *Doing my nails and data analysis, inspired by [Simply Nailogical](https://twitter.com/nailogical)*
 
-After several runs with finetuning I still got higher numbers than the BiqQuery research Sarah Adams has done in the meantime (for Go only). This makes me suspect there is something wrong in the code. So I went through tweaking and code-reviewing again. So I hope I finally have some representable numbers.
+After several runs with fine-tuning I still got higher numbers than the BiqQuery research Sarah Adams has done in the meantime (for Go only). This makes me suspect there is something wrong in the code. So I went through tweaking and code-reviewing again. So I hope I finally have some representable numbers.
 
 ## The research
 ![The EDR used](/images/genderstats/erd.png) 
 
-So using the GHTorrent database dump for 2017-03-01 enriched with the names for the users I dediced to link up all commits to a project, that wasn't a fork (to avoid duplicated) and chose the primary language of the project (as many projects has content like javascript and html). Then filtered them to have one person with multiple languages they use. For the name I used the one from the GitHub profile (not Git commit) and filterd the ones that do not look like a full name (in a crappy way). This results in:
+So using the GHTorrent database dump for 2017-03-01 enriched with the names for the users I decided to link up all commits to a project, that wasn't a fork (to avoid duplicated) and chose the primary language of the project (as many projects has content like javascript and html). Then filtered them to have one person with multiple languages they use. For the name I used the one from the GitHub profile (not Git commit) and filtered the ones that do not look like a full name (in a crappy way). This results in:
 ```sql
 SELECT * FROM (SELECT u.id, p.language, u.name FROM commits c JOIN projects p ON c.project_id=p.id JOIN users u ON c.author_id=u.id WHERE c.id >= ? AND c.id < ? AND u.name is not null AND p.forked_from is null AND p.language is not null) q GROUP BY q.language, q.name, q.id
 ```
@@ -61,7 +61,7 @@ The code went over 72 089 195 results and sort them per language, extract the fi
 - Non-binary people are not detectable
 - Gender-neutral names may cause incorrect assignment
 - Probably some more that went wrong
-- I suggest NOT to take these as ABSOLUTE numbers but as an attempt for representatation
+- I suggest NOT to take these as ABSOLUTE numbers but as an attempt for representation
 
 ## The numbers
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1hxqDS57CQ5H_O1gh_qs3gGgGyK7_zx7n0gFjIbhr7m0/pubchart?oid=1427616262&amp;format=interactive"></iframe>
