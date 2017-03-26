@@ -70,3 +70,5 @@ Now the last demo! Why did I add var app= every time? Well you can combine Vue.j
 
 
 I hope this is a simple and clear overview what Vue.js does! It has a lot more to offer but it couldn't all fit in this blog post. 
+
+PS thanks Karolis Rusenas for the tip: There is an addon to Vue.js that allows you to use simple directives for UI elements, it is called [Vuitify.js](https://vuetifyjs.com)
