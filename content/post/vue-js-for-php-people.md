@@ -45,6 +45,9 @@ var app = new Vue({
 
 That was simple? Notice that the variable changes in real time?
 
+Let's try it with a dropdown list:
+<script async src="//jsfiddle.net/19kt2wvu/1/embed/"></script>
+
 Now that we have a useless example let's get serious and add vue-resource, a small addon that adds HTTP requests:
 <script async src="//jsfiddle.net/rj2gLn9x/3/embed/"></script>
 
