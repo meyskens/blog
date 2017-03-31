@@ -68,6 +68,10 @@ And every change on the data inside vue we do gets automatically changed on the 
 Now the last demo! Why did I add var app= every time? Well you can combine Vue.js with methods of other frameworks of even vanilla JS. Everything declared in there is accessible via the app variable.
 <script async src="//jsfiddle.net/ovhgdrr9/1/embed/"></script>
 
+EDIT: on indirect demand of Dirk Mervis I added a filter example that shows real time filtering of a list based on search criteria:
+<script async src="//jsfiddle.net/1wj4v1b2/1/embed/"></script>
+Too bad the `| filter` was removed in Vue.js 2.0 but this one however is more flexible.
+
 
 I hope this is a simple and clear overview what Vue.js does! It has a lot more to offer but it couldn't all fit in this blog post. 
 
