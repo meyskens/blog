@@ -69,7 +69,7 @@ Now the last demo! Why did I add var app= every time? Well you can combine Vue.j
 <script async src="//jsfiddle.net/ovhgdrr9/1/embed/"></script>
 
 EDIT: on indirect demand of Dirk Mervis I added a filter example that shows real time filtering of a list based on search criteria:
-<script async src="//jsfiddle.net/1wj4v1b2/1/embed/"></script>
+<script async src="//jsfiddle.net/1wj4v1b2/2/embed/"></script>
 Too bad the `| filter` was removed in Vue.js 2.0 but this one however is more flexible.
 
 
