@@ -55,7 +55,7 @@ Let's add some data modification
 <script async src="//jsfiddle.net/sj486ps6/1/embed/"></script>
 As you can see we've added a click event that triggers a method
 ```
-v-on:click="deleteSong(index)">
+<a ... v-on:click="deleteSong(index)" ... >
 ```
 you can even pass variables defined in the loop inside the click event!
 ```
