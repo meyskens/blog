@@ -3,7 +3,7 @@ description = ""
 date = "2015-11-20T18:57:56+01:00"
 title = "Meanwhile in Git: Cast + DJ"
 keywords = []
-
+slug = "cast-dj"
 +++
 
 At SHOUTca.st, we’re working hard. Developing new products and bringing you improvements to our current services. But sometimes I feel it's not clear to everybody what we are doing currently on the development side of things. That’s why I’m running a new blog series to explain the things behind the scenes of our development. This series is called "Meanwhile in Git" as we use Git to work on our internal projects.

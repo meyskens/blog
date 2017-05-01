@@ -12,10 +12,10 @@ PaginatePath = "/"
 [permalinks]
 
     # Permalink format for pages.
-    page = "/:title/"
+    page = "/:slug/"
 
     # Permalink format for blog posts.
-    post = "/:title/"
+    post = "/:slug/"
 
 [params]
 
