@@ -1,7 +1,7 @@
 +++
 date = "2017-05-25T20:18:56+02:00"
-description = ""
-keywords = []
+description = "How we moved ITFrame from classic servers to Docker Swarm"
+keywords = ["docker","swarm","shoutca.st"]
 title = "The ITFrame Swarm"
 
 +++
