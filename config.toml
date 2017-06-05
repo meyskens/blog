@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Maartje Eyskens"
-baseURL = "https://eyskens.me/"
+baseURL = "https://eyskens.me"
 MetaDataFormat = "toml"
 theme = "slender"
 paginate = 8
