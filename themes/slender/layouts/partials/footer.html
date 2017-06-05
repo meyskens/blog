@@ -1,6 +1,6 @@
         </div>
         <footer>
-            <p>{{ .Site.Params.footer | markdownify }}</p>
+            <p>{{ .Site.Params.footer | markdownify }} - <a href="{{ .RSSLink }}" >Subscribe with RSS (like in the good old days)</a></p>
         </footer>
         <script src="{{ "js/highlight-9.0.0.min.js" | absURL }}"></script>
         <script>hljs.initHighlightingOnLoad();</script>
