@@ -10,6 +10,8 @@ header = "/images/docker-desktop/dell.jpg"
 
 So I decided to give Linux on the desktop a best try. I recently installed Ubuntu with the [i3 window manager](https://i3wm.org/) on my [Cr-48](https://cr-48.wikispaces.com/) and fell in love with it. Since I feel like Linux on a MacBook is a pain I start looking for a nice new laptop. It had to be powerfull, good looking and not too heavy. After I gave up looking for a rose gold laptop with something more that a celeron (really, somebody make one, I'll order 10). I went for the Dell XPS 13 with Ubuntu. 
 
+![My XPS13 in the sun](/images/docker-desktop/dell.jpg)
+
 When it arrived, I started it up and started configurig Ubuntu 16.04, nice huh! Went ahead and eplaced Unity with i3. We all know [Unity is dead](http://www.omgubuntu.co.uk/2017/04/ubuntu-18-04-ship-gnome-desktop-not-unity) but I like the configurability of i3 more anyhow.
 
 It would be boring if I just used the apps installed from apt-get from 10000 repositories, with 8857646 dependencies everywhere in `/usr`. You hear me coming... 
