@@ -40,5 +40,8 @@ For now Chrom(ium)(e) runs still on the host (due lazyness). As well as Slack as
 ## Will you go CoreOS Container Linux?
 Wearing by CoreOS shirt and sunglasses I say maybe not for now. While I am close to have everything in containers I am not experienced enough with Gentoo to set it up. Also the chose of the Dell XPS13 was also to have official driver support with [Project Sputnik](https://launchpad.net/dell-sputnik). The little improvements is what makes an OS great. 
 
+### Follow-up (1 day later)
+Slack is running fine since adopting the same arguments as [Chrome](https://github.com/jessfraz/dockerfiles/blob/master/chrome/stable/Dockerfile). For opening URLs I hacked a little script together that uses sockets to open the browser for you. As always available on [GitHub](https://github.com/meyskens/x-www-browser-forward).
+
 
 PS: Sorry for any weird typos, with this laptop i decided to go for qwerty instead of the Belgian/French azerty. 
