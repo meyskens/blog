@@ -43,5 +43,14 @@ Wearing by CoreOS shirt and sunglasses I say maybe not for now. While I am close
 ### Follow-up (1 day later)
 Slack is running fine since adopting the same arguments as [Chrome](https://github.com/jessfraz/dockerfiles/blob/master/chrome/stable/Dockerfile). For opening URLs I hacked a little script together that uses sockets to open the browser for you. As always available on [GitHub](https://github.com/meyskens/x-www-browser-forward).
 
+## Follow up (1 week later)
+I finally got notifications to work! Getting the user DBus session into docker can be a pain. I had to edit `/etc/dbus-1/session.conf` to add a listener on a propper unix socket by adding `<listen>unix:path=/var/run/user/1000/bus</listen>`. (this may break multiuser support, but one week of challenging people with try to close this window I don't see other people using this laptop yet). Now we need to link it into our container, I did this by adding the following lines:
+```
+-v /var/run/user/$(id -u):/var/run/user/$(id -u) \
+-e DBUS_SESSION_BUS_ADDRESS="unix:path=/var/run/user/1000/bus" \
+```
+One last thing to make sure is to create a user inside the container image and use that to execute the software. 
+
+![Hello notifications from inside Docker](/images/docker-desktop/nofify.png)
 
 PS: Sorry for any weird typos, with this laptop i decided to go for qwerty instead of the Belgian/French azerty. 
