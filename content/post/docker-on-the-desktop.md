@@ -51,6 +51,6 @@ I finally got notifications to work! Getting the user DBus session into docker c
 ```
 One last thing to make sure is to create a user inside the container image and use that to execute the software. 
 
-![Hello notifications from inside Docker](/images/docker-desktop/nofify.png)
+![Hello notifications from inside Docker](/images/docker-desktop/notify.png)
 
 PS: Sorry for any weird typos, with this laptop i decided to go for qwerty instead of the Belgian/French azerty. 
