@@ -1,12 +1,21 @@
 const now = new Date();
 
+const animate = (agent) => {
+    agent.animate();
+}
+
+const say = (text, agent) => {
+    agent.speak(text);
+}
+
 const loadEgg = () => {
     clippy.load('Clippy', function(agent) {
         agent.show();
-        setInterval(agent.speak, 5000, "So liking this site, huh?")
-        setInterval(agent.speak, 10000, "You know, I only show once a year?")
-        setInterval(agent.speak, 20000, "Want to sign my petition to show up at halloween too??")
-        setInterval(agent.animate, 30000)
+        setInterval(say, 5000, "So liking this site, huh?", agent)
+        setInterval(say, 10000, "You know, I only show once a year?", agent)
+        setInterval(say, 20000, "Want to sign my petition to show up at halloween too??", agent)
+        setInterval(say, 60000, "I am a GitHub bot now! At least they like me :(")
+        setInterval(animate, 30000, agent)
     });
 }
 
