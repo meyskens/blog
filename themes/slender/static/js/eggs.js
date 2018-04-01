@@ -11,10 +11,10 @@ const say = (text, agent) => {
 const loadEgg = () => {
     clippy.load('Clippy', function(agent) {
         agent.show();
-        setInterval(say, 5000, "So liking this site, huh?", agent)
-        setInterval(say, 10000, "You know, I only show once a year?", agent)
-        setInterval(say, 20000, "Want to sign my petition to show up at halloween too??", agent)
-        setInterval(say, 60000, "I am a GitHub bot now! At least they like me :(")
+        setTimeout(say, 5000, "So liking this site, huh?", agent)
+        setTimeout(say, 10000, "You know, I only show once a year?", agent)
+        setTimeout(say, 20000, "Want to sign my petition to show up at halloween too??", agent)
+        setTimeout(say, 60000, "I am a GitHub bot now! At least they like me :(")
         setInterval(animate, 30000, agent)
     });
 }
