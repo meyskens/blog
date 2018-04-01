@@ -1,7 +1,7 @@
 const now = new Date();
 
 const loadEgg = () => {
-    clippy.load('Clippy', (agent) => {
+    clippy.load('Clippy', function(agent) {
         agent.show();
         setInterval(agent.speak, 5000, "So liking this site, huh?")
         setInterval(agent.speak, 10000, "You know, I only show once a year?")
