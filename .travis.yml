@@ -1,6 +1,6 @@
 language: go
 go:
-  - 1.8
+  - 1.x
 addons:
   ssh_known_hosts: eyskens.me
   apt:
@@ -11,8 +11,8 @@ sudo: required
 
 install:
   - export SSHPASS=$DEPLOY_PASS
-  - wget https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19-64bit.deb
-  - sudo dpkg -i hugo_0.19-64bit.deb
+  - wget https://github.com/spf13/hugo/releases/download/v0.37.1/hugo_0.37.1-64bit.deb
+  - sudo dpkg -i hugo_0.37.1-64bit.deb
 
 script:
   - hugo
