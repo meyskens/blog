@@ -12,10 +12,14 @@
         <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
         <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
         {{ .Hugo.Generator }}
+        
+        <link rel="stylesheet" href="{{ "css/clippy.css" | absURL }}" media="all">
         <link rel="stylesheet" href="{{ "css/slender-base.css" | absURL }}">
         <link rel="stylesheet" href="{{ "css/slender-color-schemes.css" | absURL }}">
         <link rel="stylesheet" href="{{ "css/font-awesome-4.5.0.min.css" | absURL }}">
         <link rel="stylesheet" href="{{ "css/highlight-9.0.0-default.min.css" | absURL }}">
+        <script src="{{ "js/clippy.js" | absURL }}"></script>
+        <script src="{{ "js/eggs.js" | absURL }}"></script>
         {{ if .RSSLink }}
         <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
         <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
@@ -36,6 +40,7 @@
                 }
             </style>
         {{ end }}
+
     </head>
     <body class="color-scheme-{{ .Site.Params.colorscheme }}">
         <div class="container">
