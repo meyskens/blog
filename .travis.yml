@@ -11,8 +11,8 @@ sudo: required
 
 install:
   - export SSHPASS=$DEPLOY_PASS
-  - wget https://github.com/spf13/hugo/releases/download/v0.37.1/hugo_0.37.1-64bit.deb
-  - sudo dpkg -i hugo_0.37.1-64bit.deb
+  - wget -o hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-64bit.deb
+  - sudo dpkg -i hugo.deb
 
 script:
   - hugo
