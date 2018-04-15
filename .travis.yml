@@ -34,7 +34,7 @@ install:
 
 script:
   - hugo
-  - if [ "$OLD" == "false" ]; then docker build -t $DOCKER_REPO:$ARCH-$TRAVIS_COMMIT --build-arg ARCH="$ARCH" ./; fi
+  - if [ "$OLD" == "false" ]; then docker build -t $DOCKER_REPO:$ARCH-latest --build-arg ARCH="$ARCH" ./; fi
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
