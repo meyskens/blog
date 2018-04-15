@@ -8,6 +8,24 @@ addons:
         - sshpass
         - wget 
 sudo: required
+services: docker
+env:
+    global:
+      - QEMU_VER=v2.9.1
+      - DOCKER_REPO=maartje/blog
+    matrix:
+      - OLD=true
+      - OLD=false  ARCH=amd64 QQEMU_ARCH=x86_64
+      - OLD=false  ARCH=armhf QEMU_ARCH=arm
+      - OLD=false  ARCH=arm64 QEMU_ARCH=aarch64
+
+before_install:
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  - sudo apt-get update
+  - sudo apt-get -y install docker-ce
+  - sudo apt-get -y install qemu-user-static
+  - docker run --rm --privileged multiarch/qemu-user-static:register
 
 install:
   - export SSHPASS=$DEPLOY_PASS
@@ -16,6 +34,9 @@ install:
 
 script:
   - hugo
+  - if [ "$OLD" == "false" ] then docker build -t $DOCKER_REPO:$ARCH-$TRAVIS_COMMIT --build-arg ARCH="$ARCH" ./; fi
 
 after_success:
-- sshpass -e rsync -avz --delete public/ blog@eyskens.me:/var/www/blog/
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - if [ "$OLD" == "true" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ] then sshpass -e rsync -avz --delete public/ blog@eyskens.me:/var/www/blog/; fi
+  - if [ "$OLD" == "false" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ] then docker push $DOCKER_REPO:$ARCH-latest; fi
