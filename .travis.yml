@@ -38,5 +38,5 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - if [ "$OLD" == "true" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ] then sshpass -e rsync -avz --delete public/ blog@eyskens.me:/var/www/blog/; fi
-  - if [ "$OLD" == "false" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ] then docker push $DOCKER_REPO:$ARCH-latest; fi
+  - if [ "$OLD" == "true" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then sshpass -e rsync -avz --delete public/ blog@eyskens.me:/var/www/blog/; fi
+  - if [ "$OLD" == "false" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then docker push $DOCKER_REPO:$ARCH-latest; fi
