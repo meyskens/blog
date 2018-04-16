@@ -18,13 +18,13 @@ Ingress controllers (looking at only the HTTP ones) just are reverse proxies who
 The service in Kubernetes is then responsible for forwarding the traffic to the pod.  
 
 ## Details
-So the above you probably alreadt knew. But how does the ingress controller know where to forward traffic?  
+So the above you probably already knew. But how does the ingress controller know where to forward traffic?  
 Each ingress controller has a service account, this service account then has a ClusterRole assigned. This allows the pod which runs the ingress controller to access the Kubernetes API.  
 Kubernetes has `Ingress` objects, these define one or multiple rules for network to flow.
 <script src="https://gist.github.com/meyskens/5fb4518329885d48c8ef5e19a5bbc729.js"></script>
 
 In this case we specified a hostname `maartje.tech` which has only one path set to route `/` (and every other path) to the `test` service on port `80`.  
-These opjects are then picked up by the Ingress Controller which then is configured to follow these. But how does the controller know where to find `test`? If the controller runs in the same namespace DNS would just take care of that. But this isn't the case. This is why the ingress also needs to look up the service to get it's ClusterIP to route to.
+These opjects are then picked up by the Ingress Controller which then is configured to follow these. But how does the controller know where to find `test`? If the controller runs in the same namespace DNS would just take care of that. But this isn't the case. This is why the ingress also needs to look up the service to get its ClusterIP to route to.
 
 In code this results to 
 
