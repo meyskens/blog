@@ -20,9 +20,9 @@ Ubuntu was close back in 2015, UBPorts took over. Now that their OS is fully run
 Email: Dekko 2 while shouting that it's experimental looks lovely!  
 Twitter: So yeah... a webapp wrapper called "Tweet" will do (I will miss you Tweetbot!)  
 Slack: Let's continue this later...  
-Messaging: So I got a situation here, I use FB Messenger, WhatsApp, iMessage and on occasions Telegram. None of these run on my phone.
-Podcasts: Podbird looks great!
-Apple Watch: I cannot even find a good looking Android watch, let's not ask for a Linux one.
+Messaging: So I got a situation here, I use FB Messenger, WhatsApp, iMessage and on occasions Telegram. None of these run on my phone.  
+Podcasts: Podbird looks great!  
+Apple Watch: I cannot even find a good looking Android watch, let's not ask for a Linux one.  
 
 ### Messaging: federation of the puppets
 While researching into alternatives for messaging I got dragged into yet another world of open source awesomeness... Matrix. Matrix is comparable to mastodont but for messaging.
