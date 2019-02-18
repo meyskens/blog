@@ -35,5 +35,7 @@ Slack has a Matrix bridge. But I am a too much of a Slack lover. Slack has an An
 Containers on a phone? This maked the world even better! There is a fork of Anbox by UBPorts that runs on my Nexus 5! I have been told this is highly experimental however Slack works smooth* (*as long you do not need to play any media or open links). Which solved my problem!
 
 ## Day 1
+My Slack dream isn't as good as it was. The Anbox runtime does not have any webkit capabilities causing me to be unable to open any (magic) links. So there was a hack for magic links. I could copy the link on my laptop then adb shell into my phone which can adb shell into anbox (cool right!). A simple `adb shell am start -a android.intent.action.VIEW -d URL` then does it to trigger slack into opening my link. There is only one last flaw. A few Slacks I am in only accept Google Auth. Which needs a browser...  
+After some thinking I figured it out. I installed [Intent Intercept](https://f-droid.org/en/packages/de.k3b.android.intentintercept/), this could give me the OAuth URL it was trying to call. I copied that URL and sent it (over Slack) to my laptop. There I handled the login in Chrome. There Chrome gave me a "Do you want to open in xdg-open" notice. So there was being redirected to a non HTTP URL. I opened the inspector and found the redirect header to `slack://` copied that URL and ran `am start -a android.intent.action.VIEW -d URL` again. Now Slack happily accepted my token and logged in! 5 
 
 **This is a live blog kind of post, updates will follow soon**
