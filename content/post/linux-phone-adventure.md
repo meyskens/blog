@@ -1,5 +1,5 @@
 +++
-date = "2019-02-17T20:10:18+02:00"
+date = "2019-02-17T20:20:18+02:00"
 description = "Using only a Ubuntu Phone in 2019"
 keywords = ["ubuntu touch", "ubports", "linux phone"]
 title = "Linux phone adventure"
