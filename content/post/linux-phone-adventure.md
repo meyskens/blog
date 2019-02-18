@@ -16,7 +16,7 @@ Ubuntu was close back in 2015, UBPorts took over. Now that their OS is fully run
 <blockquote class="twitter-tweet" data-lang="nl"><p lang="en" dir="ltr">[Poll]</p>&mdash; Maartje Eyskens (@MaartjeME) <a href="https://twitter.com/MaartjeME/status/1097061620570836993?ref_src=twsrc%5Etfw">17 februari 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-75% of the voters said "Yes!" to let me suffer this... So let's do this! Before switching I need to install things!  
+76% of the voters said "Yes!" to let me suffer this... So let's do this! Before switching I need to install things!  
 Email: Dekko 2 while shouting that it's experimental looks lovely!  
 Twitter: So yeah... a webapp wrapper called "Tweet" will do (I will miss you Tweetbot!)  
 Slack: Let's continue this later...  
