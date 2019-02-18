@@ -24,6 +24,8 @@ Messaging: So I got a situation here, I use FB Messenger, WhatsApp, iMessage and
 Podcasts: Podbird looks great!  
 Apple Watch: I cannot even find a good looking Android watch, let's not ask for a Linux one.  
 
+*Why not Sailfish OS?* Sailfish OS sounds nice however only is on a few devices, I do not own any of these. I did happen to own a Nexus 5.
+
 ### Messaging: federation of the puppets
 While researching into alternatives for messaging I got dragged into yet another world of open source awesomeness... Matrix. Matrix is comparable to mastodont but for messaging.
 Sure yet another messaging platform... Matrix has this thing called [bridges](https://matrix.org/docs/projects/bridges). While most of them require your own private server (which I now have ;) ) they allow me to use any Matrix client to connect to my Friends on iMessage (not tried yet), Facebook and WhatsApp. It only took me a few hours to figure out what I needed and configuring my own server. As a client I love the super cute [FluffyChat](https://open-store.io/app/fluffychat.christianpauly). I haven't been testing this for long but it looks so promising that I am considering to use this setup on my iPhone too.
