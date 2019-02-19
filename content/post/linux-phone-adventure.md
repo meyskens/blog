@@ -41,5 +41,9 @@ After some thinking I figured it out. I installed [Intent Intercept](https://f-d
 Taking the phone outside for the first day got me caught on some (non-replicatable) bugs a few times... For example my keyboard of my passcode stopped working suddenly. These small things can get annoying. I also seem to have crashed Mir a few times. By the end of the day I had to switch back to my iPhone as fallback over wifi.
 
 ## Day 2
-I really like the swipe based UI!
+I really like the swipe based UI! When using my iPad in Spanish class i even tried to get my app switcher by swiping from the right, I was sad that it did not work. I do not like the perfomance of webapps too much, however the few native ones I can find work like a charm.  
+Anbox crashed a few times, this is totally expected giving it's status. It also lacks a back button which Slack kind of assumes you have.  
+My biggest miss is Lastpass (or any integrated password manager). Which the Android trick will not even work for. Also some webapp wrappers do not seem to accept copy paste for some reason? Very annoting when your Twitter password is 32 characters long.  
+Last (for this writing session) remark is that tomorrow I will probably have to cheat as while uNav looks nice it has no public transport mode, guess I will have to take out Citymapper on my iPhone again.
+
 **This is a live blog kind of post, updates will follow soon**
