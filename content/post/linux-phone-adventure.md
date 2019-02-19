@@ -38,4 +38,8 @@ Containers on a phone? This maked the world even better! There is a fork of Anbo
 My Slack dream isn't as good as it was. The Anbox runtime does not have any webkit capabilities causing me to be unable to open any (magic) links. So there was a hack for magic links. I could copy the link on my laptop then adb shell into my phone which can adb shell into anbox (cool right!). A simple `adb shell am start -a android.intent.action.VIEW -d URL` then does it to trigger slack into opening my link. There is only one last flaw. A few Slacks I am in only accept Google Auth. Which needs a browser...  
 After some thinking I figured it out. I installed [Intent Intercept](https://f-droid.org/en/packages/de.k3b.android.intentintercept/), this could give me the OAuth URL it was trying to call. I copied that URL and sent it (over Slack) to my laptop. There I handled the login in Chrome. There Chrome gave me a "Do you want to open in xdg-open" notice. So there was being redirected to a non HTTP URL. I opened the inspector and found the redirect header to `slack://` copied that URL and ran `am start -a android.intent.action.VIEW -d URL` again. Now Slack happily accepted my token and logged in!  
 
+Taking the phone outside for the first day got me caught on some (non-replicatable) bugs a few times... For example my keyboard of my passcode stopped working suddenly. These small things can get annoying. I also seem to have crashed Mir a few times. By the end of the day I had to switch back to my iPhone as fallback over wifi.
+
+## Day 2
+I really like the swipe based UI!
 **This is a live blog kind of post, updates will follow soon**
