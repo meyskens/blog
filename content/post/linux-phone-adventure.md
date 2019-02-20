@@ -46,4 +46,9 @@ Anbox crashed a few times, this is totally expected giving it's status. It also 
 My biggest miss is Lastpass (or any integrated password manager). Which the Android trick will not even work for. Also some webapp wrappers do not seem to accept copy paste for some reason? Very annoting when your Twitter password is 32 characters long.  
 Last (for this writing session) remark is that tomorrow I will probably have to cheat as while uNav looks nice it has no public transport mode, guess I will have to take out Citymapper on my iPhone again.
 
+## Day 3
+Having no password manager is becoming a pain... I cannot understand how you can live without one (and be secure). I did use my podcast client a lot today and can not complain. I do miss Bluetooth headphone support :( Maybe I need to play with pulseaudio a bit like on my laptop?  
+After 3 days I still cannot say I want to replace my iPhone (sorry). Mostly it is about tiny details (given anbox will improve) like how Tweetbot or Overcast works (or actually having a password manager?). Or maybe it's the speed? Okay the Nexus 5 is a 2013 phone, I will have said the same if you have my an iPhone 5s.  
+Anyhow, tomorrow is another day.  
+
 **This is a live blog kind of post, updates will follow soon**
