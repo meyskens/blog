@@ -49,6 +49,9 @@ Last (for this writing session) remark is that tomorrow I will probably have to 
 ## Day 3
 Having no password manager is becoming a pain... I cannot understand how you can live without one (and be secure). I did use my podcast client a lot today and can not complain. I do miss Bluetooth headphone support :( Maybe I need to play with pulseaudio a bit like on my laptop?  
 After 3 days I still cannot say I want to replace my iPhone (sorry). Mostly it is about tiny details (given anbox will improve) like how Tweetbot or Overcast works (or actually having a password manager?). Or maybe it's the speed? Okay the Nexus 5 is a 2013 phone, I will have said the same if you have my an iPhone 5s.  
-Anyhow, tomorrow is another day.  
+Anyhow, tomorrow is another day. 
+
+# Day 4 & 5
+Never thought I would say this about a phone: I love the built in calculator, it was really handy while counting stock (yes I take weekly breaks from tech). Other than that I decided to test the phone by actually calling into a video conference, it worked fine however i found a minor bug that i could not change the sound level. What I realized the past days is that without fully realizing my phone for me isn't just a pocket Twitter device that makes sound, I actually get a lot of work done on it, something that got a bit harder on my Ubuntu phone. 
 
 **This is a live blog kind of post, updates will follow soon**
