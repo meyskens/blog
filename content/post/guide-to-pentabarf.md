@@ -2,7 +2,8 @@
 title = "Beginners Guide to Pentabarf"
 keywords = ["Pentabarf", "guide", "fosdem"]
 description = "How to submit a talk to FOSDEM"
-date = "2019-10-14T21:00:00+01:00"
+date = "2019-10-14T20:00:18+02:00"
+header = ""
 
 +++
 
