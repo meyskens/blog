@@ -7,6 +7,8 @@ header = ""
 
 +++
 
+How to submit a talk to FOSDEM
+
 ![pentabarf logo](https://cdn-images-1.medium.com/max/1280/0*iJgl7GuVWj1kY5Nw.png)
 
 ## What is Pentabarf?
@@ -64,7 +66,7 @@ about the speaker of the talks.
 ![Personal abscract](https://cdn-images-1.medium.com/max/1280/1*A4wSRR4h1qOlZxln_XNKHg.png)
 
 Now press “Save” and we’re done here! You only have to do this once for all your
-FOSDEM talk proposols now and in the future (make sure to keep it up to date
+FOSDEM talk proposals now and in the future (make sure to keep it up to date
 next year).
 
 ## Let’s submit a talk!
@@ -73,7 +75,7 @@ I wrote about Pentabarf managing all that goes on at FOSDEM before. For this
 reason you will see the term “Event” being used, don’t get confused this is the
 place you have to be for all your proposals!
 
-In the left menu you have “Events” here you can track the proposals you alreay
+In the left menu you have “Events” here you can track the proposals you already
 sent, under “Create event” you can submit one!
 
 ![Event proposal srceen](https://cdn-images-1.medium.com/max/1280/1*-Xn62vWxGbR3o0tO1IgBJg.png)
@@ -97,9 +99,9 @@ Next we go to the “Description” tab. Here we only need 2 fields filled in:
 
 All other tabs/fields are optional, and are mostly used to publish extra info on
 the website! You can click “Save” in the bottom righ corner and your talk is
-sumbitted!
+submitted!
 
-You can confirm this as you will have a differend URL and your talk will be
+You can confirm this as you will have a different URL and your talk will be
 listed under “Events”!
 
 ![events view](https://cdn-images-1.medium.com/max/960/1*4cHNUkugNdMdrHFE6J4MWQ.png)
