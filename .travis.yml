@@ -38,7 +38,7 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - if [ "$DISPATCH" == "true" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then echo "$DISPATCH_PASSWORD" | docker login -u "$DISPATCH_USERNAME" --password-stdin registry.dispatch.sh; fi
+  - if [ "$DISPATCH" == "true" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then echo "$DISPATCH_PASSWORD" | docker login --username registry --password-stdin registry.dispatch.sh; fi
   - if [ "$DISPATCH" == "true" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then docker tag $DOCKER_REPO:$ARCH-latest registry.dispatch.sh/maartje/blog:latest; docker push registry.dispatch.sh/maartje/blog:latest; fi
   - if [ "$OLD" == "true" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then sshpass -e rsync -avz --delete public/ blog@eyskens.me:/var/www/blog/; fi
   - if [ "$OLD" == "false" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then docker push $DOCKER_REPO:$ARCH-latest; fi
