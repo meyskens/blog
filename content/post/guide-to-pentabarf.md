@@ -27,8 +27,8 @@ to write the ultimate guide on how to use Pentabarf to submit a talk to FOSDEM
 
 ## Get Started
 
-To submit a talk to FOSDEM 2020 you have to go to
-[https://penta.fosdem.org/submission/FOSDEM20](https://penta.fosdem.org/submission/FOSDEM20).
+To submit a talk to FOSDEM 2021 you have to go to
+[https://penta.fosdem.org/submission/FOSDEM21](https://penta.fosdem.org/submission/FOSDEM21).
 
 If you submitted a talk before you probably already have an account, if
 this is your first time you have to sign up first. You can do this under “Create
