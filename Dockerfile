@@ -1,4 +1,4 @@
-FROM alpine as build
+FROM amd64/alpine:3.7 as build
 
 RUN apk add --no-cache hugo
 
