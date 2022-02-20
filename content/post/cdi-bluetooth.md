@@ -51,7 +51,7 @@ The connector has 8 pins to do serial connection, we only need RXD and RTS as th
 
 Because the CD-i outputs ~5v and the Arduino Nano IoT works 3.3v we need to use a level shifter. This will also isolate the two devices from each other, the CD-i serial spec changed over device revissions we better stay safe this way. A simple shifter can be found quite cheap at your local Chinese website or [from our open source friends at Sparkfun](https://www.sparkfun.com/products/12009).
 
-![Connection schematics](/images/cdi/schame.png)
+![Connection schematics](/images/cdi/schema.png)
 _Big thanks to Victor Welters for the schematics!_
 
 On the Arduino Nano I used pin D3 for RTS and D4 for RXD, these however can be changed! If you want to use it without a PC (so after debugging) you can connect the CD-i 5V to the VIN and GND to GND so the CD-i powers your Arduino. This works on my CD-i 210 /00, but I have not tested it on other CD-i units (will be updated as soon as Jorne can confirm my prototype works on all models).
