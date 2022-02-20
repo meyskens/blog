@@ -81,8 +81,8 @@ Some reason indeed... I quickly turned to the CD-i discord server for help! TwBu
 With a new library that handled the Serial for me (as well as buttons, which yeah I already wrote code for but not as good and tested!) life was bright! Being home early due to a storm I went to my soldering iron and made a prototype board. Might have been a mistake... but it was out of my control. I knew exactly what pins I had to use and with my debugging adventures I wanted solid connected wires.
 
 "The poor-womans PCB"
-![front](/images/cdi/frontp2.png)
-![back](/images/cdi/backp2.png)
+![front](/images/cdi/frontp2.jpg)
+![back](/images/cdi/backp2.jpg)
 
 Not my best work but hey!
 
