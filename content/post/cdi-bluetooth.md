@@ -119,3 +119,9 @@ Philips never made a joystick "controller" and the joysticks on the origianal re
 The CD-i community has amazing people keeping this weird 90s tech alive and even developing new games! I am working with a friend to release a PCB to connect this console to the Bluetooth world that is just plug and play! All designs will be open source and I hope to be able to sell them at a low margin to the community giving back the profits to all contributors who helped me out! Hope to be able to update this page with more info in the future!
 
 ![cover art](/images/cdi/cover.jpg)
+
+### Update 2022-04-08: The Startup
+
+The past few weeks had been crazy looking back to it... We designed a PCB, produced a prototype batch. Tested in well. Prepared packaging, shipping, assebly, a website. Toghether with two close friends: Jorne Marx and Victor Welters we made a crazy idea into a full product. We shipped our first units to contributors and testers. Now we are ready to accept our first batch of orders!
+
+The final product is now available at [cdibluetooth.com](https://cdibluetooth.com/)!
