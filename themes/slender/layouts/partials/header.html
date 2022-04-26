@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="{{ "css/clippy.css" | absURL }}" media="all">
         <link rel="stylesheet" href="{{ "css/slender-base.css" | absURL }}">
         <link rel="stylesheet" href="{{ "css/slender-color-schemes.css" | absURL }}">
-        <link rel="stylesheet" href="{{ "css/font-awesome-4.5.0.min.css" | absURL }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
         <link rel="stylesheet" href="{{ "css/highlight-9.0.0-default.min.css" | absURL }}">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="{{ "js/clippy.js" | absURL }}"></script>
@@ -68,6 +68,7 @@
                             {{ with .Site.Params.stackoverflow }}<a href="{{ . }}"><i class="fa fa-stack-overflow"></i></a>{{ end }}
                             {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin"></i></a>{{ end }}
                             {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook"></i></a>{{ end }}
+                            <a rel="me" href="https://blahaj.social/@maartje"><i class="fa fa-mastodon"></i></a>
                         </p>
                     </aside>
                 {{ end }}
