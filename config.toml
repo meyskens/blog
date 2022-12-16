@@ -41,7 +41,7 @@ PaginatePath = "/"
     # Remove, comment, or leave blank any field to leave them out.
     email = "mailto:maartje@eyskens.me"
     github = "https://github.com/meyskens"
-    twitter = "https://twitter.com/maartjeme"
+    # twitter = "https://twitter.com/maartjeme"
 
 [menu]
 
