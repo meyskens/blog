@@ -7,6 +7,6 @@ WORKDIR /opt/blog
 
 RUN hugo
 
-FROM ghcr.io/meyskens/static-base:f43eda38b2756e94e3cfaea868d68cfe2b142f55
+FROM ghcr.io/meyskens/static-base:1840d431d467312df40e32db9ce17c11ca4d4464
 
 COPY --from=build /opt/blog/public /var/www
